@@ -1,5 +1,5 @@
 # team15-week1
-https://ecx-unilag.github.io/team15-week1/
+https://ecx-unilag.github.io/team15-week1/landing-page/landing-page.html
 
 
 
