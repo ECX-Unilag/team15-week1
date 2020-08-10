@@ -1,0 +1,12 @@
+/* Submit button */
+.submit-btn {
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+    .form-section {
+        height: 70vh;
+    }
+}

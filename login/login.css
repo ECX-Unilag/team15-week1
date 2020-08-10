@@ -1,0 +1,11 @@
+/* Form section */
+.form-section {
+    height: 65vh;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+    .form-section {
+        height: 50vh;
+    }
+}
