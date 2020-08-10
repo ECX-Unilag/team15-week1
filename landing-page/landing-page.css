@@ -17,10 +17,3 @@
     background-color: #fff;
     color: var(--primary-color);
 }
-
-/* Media queries */
-@media (max-width: 400px) {
-    #links a {
-        padding: 1em;
-    }
-}

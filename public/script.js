@@ -5,7 +5,9 @@ let password = document.getElementById('password');
 show.addEventListener('click', () => {
     if (password.type === 'password') {
         password.type = 'text';
+        show.innerText = 'Hide';
     } else {
         password.type = 'password';
+        show.innerText = 'Show';
     }
 });
