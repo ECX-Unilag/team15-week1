@@ -1,11 +1,11 @@
-const Computer = require('../models/computerS')
+const Sport  = require('../models/sportSchema')
 const{Response,ResponseError} = require('../utils/response')
 require('dotenv').config()
 
-exports.easyComputerQuestion = async(request)=>{
-    let {category,choice,level,setQuestion, answers} = request.body
+exports.easySportQuestion = async(request)=>{
+    let {category,choice,level,setQuestion, answers } = request.body
 
-    let newEasyQuestion = new Computer({
+    let newEasyQuestion = new Sport({
         category:category,
         choice:choice,
         level:level,
@@ -19,9 +19,3 @@ exports.easyComputerQuestion = async(request)=>{
         question_one:displayData
     })
 }
-
-
-
-
-
-

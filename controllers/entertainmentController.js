@@ -1,4 +1,4 @@
-const Questions = require("../models/questionSchema");
+const Questions = require("../models/entertainmentSchema");
 const { Response, ResponseError } = require("../utils/response");
 require("dotenv").config();
 
@@ -13,10 +13,9 @@ exports.setQuestion = async (request) => {
   });
 
   let displayAnswer = await data.save();
-  let secondQuestion = await data.save()
   return new Response(200, {
     status: "Successful",
-    results: displayAnswer, secondQuestion
+    results: displayAnswer
   });
 
   

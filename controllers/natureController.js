@@ -1,11 +1,12 @@
-const Computer = require('../models/computerS')
+
+const Nature = require('../models/scienceAnature')
 const{Response,ResponseError} = require('../utils/response')
 require('dotenv').config()
 
-exports.easyComputerQuestion = async(request)=>{
+exports.easyScienceQuestion = async(request)=>{
     let {category,choice,level,setQuestion, answers} = request.body
 
-    let newEasyQuestion = new Computer({
+    let newEasyQuestion = new Nature({
         category:category,
         choice:choice,
         level:level,
@@ -19,9 +20,4 @@ exports.easyComputerQuestion = async(request)=>{
         question_one:displayData
     })
 }
-
-
-
-
-
 
